@@ -1,0 +1,13 @@
+{
+  "name": "site-academico-theo-ambrosio",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-site.mjs",
+    "preview": "node scripts/serve-preview.mjs"
+  },
+  "devDependencies": {
+    "liquidjs": "^10.30.1",
+    "yaml": "^2.9.1"
+  }
+}

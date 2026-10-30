@@ -1,7 +1,11 @@
 ---
-layout: prompt
-title: 404 - Page Not Found
+layout: default
+title: Página não encontrada
 ---
-<h1 class="mt-5">404</h1>
-<p class="lead">The requested page could not be found.</p>
-<p><a href="{{ '/' | relative_url }}">Go home</a></p>
+
+<article class="interior-page">
+  <p class="eyebrow">Erro 404</p>
+  <h1>Página não encontrada</h1>
+  <p>O endereço pode ter mudado ou estar incorreto.</p>
+  <a class="button-primary" href="{{ '/' | relative_url }}">Voltar ao início <span aria-hidden="true">→</span></a>
+</article>
