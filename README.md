@@ -28,4 +28,4 @@ Abra http://127.0.0.1:4173/ no navegador. A prévia estática é gerada em `dist
 
 O workflow `.github/workflows/deploy.yml` gera `dist/` e publica no GitHub Pages após um push para `main`. No GitHub, configure **Settings → Pages → Build and deployment → Source: GitHub Actions**. O endereço planejado é `https://TheoAmbrosio.github.io/`.
 
-A foto do perfil está em `assets/images/theo-ambrosio.jpeg` e seu caminho é definido em `_data/profile.yml`.
+A foto do perfil está em `assets/images/theo-ambrosio-quadrado.png` e seu caminho é definido em `_data/profile.yml`.
