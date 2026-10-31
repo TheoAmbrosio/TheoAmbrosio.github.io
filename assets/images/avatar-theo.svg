@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-labelledby="title">
-  <title id="title">Avatar provisório com as iniciais TA</title>
+  <title id="title">Avatar provisório com as iniciais TV</title>
   <circle cx="120" cy="120" r="120" fill="#dbe8e1"/>
   <circle cx="120" cy="120" r="94" fill="#126b64"/>
   <path d="M48 179c20-14 44-21 72-21s52 7 72 21" fill="none" stroke="#b17b45" stroke-width="7" stroke-linecap="round"/>
-  <text x="120" y="139" text-anchor="middle" fill="#fffefb" font-family="Georgia,serif" font-size="68" font-weight="bold" letter-spacing="-7">TA</text>
+  <text x="120" y="139" text-anchor="middle" fill="#fffefb" font-family="Georgia,serif" font-size="68" font-weight="bold" letter-spacing="-7">TV</text>
 </svg>
