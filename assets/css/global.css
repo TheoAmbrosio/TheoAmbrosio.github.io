@@ -145,11 +145,10 @@ a:focus-visible, button:focus-visible {
 }
 .profile-avatar {
   display: block;
-  width: 116px;
-  height: 116px;
+  width: 174px;
+  height: auto;
   margin-bottom: 1.4rem;
-  border-radius: 50%;
-  object-fit: cover;
+  border-radius: .5rem;
 }
 .profile-name { margin-bottom: .2rem; font-family: "Libre Baskerville", Georgia, serif; font-size: 1.2rem; font-weight: 700; }
 .profile-role { margin-bottom: 1.2rem; color: var(--muted); font-size: .9rem; line-height: 1.5; }
