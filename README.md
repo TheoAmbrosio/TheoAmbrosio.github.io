@@ -1,4 +1,4 @@
-# Site acadêmico de Theo Veiga
+# Site acadêmico de Theo Ambrósio
 
 Site pessoal em português, baseado no template [academic-homepage](https://github.com/luost26/academic-homepage), de Shitong Luo (licença MIT). A apresentação e o conteúdo foram adaptados para Theo.
 
