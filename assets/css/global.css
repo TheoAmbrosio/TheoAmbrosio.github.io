@@ -248,8 +248,8 @@ a:focus-visible, button:focus-visible {
 .project-feature > a:hover, .project-links a:hover { text-decoration: underline; }
 .project-note { padding-left: 1rem; border-left: 3px solid var(--warm); color: var(--muted); }
 .project-links { display: flex; flex-wrap: wrap; gap: .6rem 1.5rem; margin: 1rem 0; }
-.project-video-player { max-width: 480px; }
-.project-video { display: block; width: auto; height: auto; max-width: 100%; max-height: 360px; margin: 0 auto; background: #152327; }
+.project-video-player { width: 240px; max-width: 100%; }
+.project-video { display: block; width: 100%; height: 150px; max-width: 100%; margin: 0; object-fit: contain; background: #152327; }
 .project-video:fullscreen { width: 100%; height: 100%; max-width: none; max-height: none; object-fit: contain; }
 .video-fullscreen { margin-top: .75rem; padding: .45rem .9rem; border: 1px solid var(--accent); border-radius: 3px; background: var(--surface); color: var(--accent); font: inherit; cursor: pointer; }
 .video-fullscreen:hover { background: var(--accent); color: white; }
