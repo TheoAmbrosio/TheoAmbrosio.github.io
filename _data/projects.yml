@@ -8,8 +8,3 @@
   summary: Coordeno equipes, aulas e materiais para aproximar estudantes da educação básica de matemática além do currículo escolar. Também ensino probabilidade.
   url: /axioma.html
   action: Conhecer o Axioma
-- name: Classificação de gatos e cachorros
-  kind: Estudo preparatório · imagens
-  summary: Desenvolvi uma ResNet-34 como introdução ao processamento de imagens médicas, cuja próxima etapa está prevista para dezembro de 2026 ou janeiro de 2027. O pôster em coautoria apresenta avaliação em 78 fotos da comunidade.
-  url: /projetos.html#gatos-cachorros
-  action: Ver estudo e pôster

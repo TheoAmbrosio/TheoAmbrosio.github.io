@@ -49,12 +49,6 @@ description: "Theo Ambrósio: graduando do IMPA Tech, com interesses em probabil
       <p>Sou fundador e coordenador geral. Organizo equipes e materiais e ensino probabilidade em uma iniciativa de extensão para estudantes da educação básica.</p>
       <a href="{{ '/axioma.html' | relative_url }}">Conhecer o Axioma <span aria-hidden="true">→</span></a>
     </article>
-    <article>
-      <span class="focus-index" aria-hidden="true">03</span>
-      <h3>Liga IMPACT</h3>
-      <p>Sou membro de uma liga que aproxima pessoas com conhecimento técnico e participantes do ecossistema de inovação para desenvolver ideias e projetos.</p>
-      <a href="https://www.linkedin.com/company/liga-impact/" rel="noopener noreferrer">Conhecer a liga <span aria-hidden="true">↗</span></a>
-    </article>
   </div>
 </section>
 
@@ -66,12 +60,25 @@ description: "Theo Ambrósio: graduando do IMPA Tech, com interesses em probabil
   <div class="project-grid">
     {% for project in site.data.projects %}
     <article class="project-card">
-      <p class="project-kind">{{ project.kind }}</p>
       <h3>{{ project.name }}</h3>
+      <p class="project-kind">{{ project.kind }}</p>
       <p>{{ project.summary }}</p>
       <a href="{{ project.url | relative_url }}">{{ project.action }} <span aria-hidden="true">→</span></a>
     </article>
     {% endfor %}
+  </div>
+</section>
+
+<section class="home-section" aria-labelledby="liga-impact">
+  <div class="section-heading">
+    <p class="eyebrow">Comunidade e inovação</p>
+    <h2 id="liga-impact">Liga IMPACT</h2>
+  </div>
+  <p>Sou membro da Liga IMPACT, que aproxima pessoas com conhecimento técnico, empreendedores e outros participantes do ecossistema de inovação para transformar ideias em projetos e soluções.</p>
+  <p>No Hackathon VX, participei da equipe da Pactua, que conquistou o terceiro lugar geral.</p>
+  <div class="project-links">
+    <a href="https://www.linkedin.com/company/liga-impact/" rel="noopener noreferrer">Conhecer a liga ↗</a>
+    <a href="https://www.linkedin.com/feed/update/urn:li:activity:7525354979415744512/" rel="noopener noreferrer">Publicação sobre a equipe ↗</a>
   </div>
 </section>
 

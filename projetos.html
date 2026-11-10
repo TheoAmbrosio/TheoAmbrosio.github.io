@@ -14,30 +14,18 @@ description: "Projetos de Theo Ambrósio em ciência de dados, aprendizado de m�
   </header>
 
   <section class="project-feature" aria-labelledby="pactua">
-    <p class="project-kind">Hackathon VX · 7–8 nov 2026</p>
     <h2 id="pactua">Pactua</h2>
+    <p class="project-kind">Hackathon VX · 7–8 nov 2026</p>
     <p>Em uma equipe de cinco pessoas, desenvolvemos uma proposta para negociação de dívidas em escala no desafio D03, da Ondaluz Telecom. A Pactua combina um agente conversacional com um motor de propostas em código. A equipe conquistou o terceiro lugar geral entre 13 equipes selecionadas.</p>
     <p class="project-note">Os resultados quantitativos divulgados para o projeto vêm de conversas simuladas; não representam recuperação financeira real.</p>
     <a href="{{ '/pactua.html' | relative_url }}">Ver problema, arquitetura e avaliação <span aria-hidden="true">→</span></a>
   </section>
 
   <section class="project-feature" aria-labelledby="axioma">
-    <p class="project-kind">Extensão universitária · IMPA Tech</p>
     <h2 id="axioma">Projeto Axioma</h2>
+    <p class="project-kind">Extensão universitária · IMPA Tech</p>
     <p>O Axioma oferece aulas gratuitas de matemática avançada a estudantes da educação básica. Sou fundador e coordenador geral: organizo equipes, aulas e materiais e ensino probabilidade. Em outubro de 2026, a equipe coordenada tinha cerca de 20 pessoas, e as atividades do período reuniam cerca de 30 participantes.</p>
     <a href="{{ '/axioma.html' | relative_url }}">Ver atividades e materiais <span aria-hidden="true">→</span></a>
-  </section>
-
-  <section class="project-feature" aria-labelledby="gatos-cachorros">
-    <p class="project-kind">Estudo preparatório · classificação de imagens</p>
-    <h2 id="gatos-cachorros">Gatos e cachorros</h2>
-    <p>Este estudo de classificação de gatos e cachorros é minha introdução ao processamento de imagens para a etapa de imagens médicas do PICME, prevista para começar entre dezembro de 2026 e janeiro de 2027. Desenvolvi um modelo baseado em ResNet-34 pré-treinada e documentei preparação dos dados, ampliações, treinamento, código e resultados de validação.</p>
-    <p>A melhor acurácia registrada para o modelo principal foi 98,32% na validação. Para uma avaliação posterior, meus colegas e eu montamos um conjunto de 78 fotos de gatos e cachorros da comunidade do IMPA Tech. O modelo acertou 66 delas (84,62%), como documentamos em um pôster em inglês de minha coautoria com Mateus Bandeira. O conjunto externo é pequeno; os resultados de validação dos participantes não são diretamente comparáveis porque usaram divisões e protocolos diferentes.</p>
-    <div class="project-links">
-      <a href="{{ '/assets/docs/cats-vs-dogs-ii-poster-en.pdf' | relative_url }}">Ler o pôster em inglês (PDF) <span aria-hidden="true">↗</span></a>
-      <a href="https://github.com/TheoAmbrosio/picme-processamento-de-imagens/tree/main/Cats%20and%20Dogs%20I%20e%20II/modelo%20principal" rel="noopener noreferrer">Modelo, método e resultados no GitHub <span aria-hidden="true">↗</span></a>
-      <a href="https://github.com/TheoAmbrosio/picme-processamento-de-imagens" rel="noopener noreferrer">Repositório do PICME <span aria-hidden="true">↗</span></a>
-    </div>
   </section>
 
   <section class="project-feature" aria-labelledby="em-andamento">
@@ -45,4 +33,13 @@ description: "Projetos de Theo Ambrósio em ciência de dados, aprendizado de m�
     <h2 id="em-andamento">Trabalho com dados de uma empresa familiar</h2>
     <p>Comecei a trabalhar com meus irmãos para organizar os processos da microempresa do nosso pai. Hoje a agenda dele está cheia; queremos usar dados e automações com IA para reduzir tarefas operacionais e liberar tempo de atendimento. Com mais capacidade, poderemos buscar novos clientes e aumentar o faturamento. Estamos definindo o problema e os métodos; os dados da empresa são privados.</p>
   </section>
+  <details class="study-note" id="gatos-cachorros">
+    <summary>Uma experiência de aprendizado: gatos e cachorros</summary>
+    <p>Fiz um exercício de classificação com uma ResNet-34 como introdução ao processamento de imagens, antes da etapa de imagens médicas do PICME prevista para dezembro de 2026 ou janeiro de 2027. Meus colegas e eu também reunimos 78 fotos dos pets da comunidade do IMPA Tech para uma avaliação, apresentada em um pôster em inglês com Mateus Bandeira.</p>
+    <p>O modelo alcançou 98,32% na validação interna e acertou 66 das 78 fotos da comunidade (84,62%). São avaliações com conjuntos e protocolos diferentes.</p>
+    <div class="project-links">
+      <a href="{{ '/assets/docs/cats-vs-dogs-ii-poster-en.pdf' | relative_url }}">Pôster em inglês (PDF) ↗</a>
+      <a href="https://github.com/TheoAmbrosio/picme-processamento-de-imagens" rel="noopener noreferrer">Estudos e código no GitHub ↗</a>
+    </div>
+  </details>
 </article>
