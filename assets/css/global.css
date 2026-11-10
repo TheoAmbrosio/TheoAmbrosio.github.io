@@ -246,6 +246,7 @@ a:focus-visible, button:focus-visible {
 .project-note { padding-left: 1rem; border-left: 3px solid var(--warm); color: var(--muted); }
 .project-links { display: flex; flex-wrap: wrap; gap: .6rem 1.5rem; margin: 1rem 0; }
 .project-visual { max-width: 430px; margin: 1.5rem 0; }
+.project-video { display: block; width: 100%; height: auto; max-height: 75vh; background: #152327; }
 .project-visual a, .project-visual img { display: block; }
 .project-visual img { width: 100%; height: auto; border: 1px solid var(--line); }
 .project-visual figcaption { margin-top: .5rem; color: var(--muted); font-size: .84rem; }
