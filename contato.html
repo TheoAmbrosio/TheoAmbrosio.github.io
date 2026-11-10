@@ -2,6 +2,8 @@
 layout: default
 title: Contato
 navbar_title: Contato
+url: /contato.html
+description: "Contato de Theo Ambrósio para pesquisa, projetos de ciência de dados, IA e Projeto Axioma."
 ---
 
 <article class="interior-page">
@@ -16,17 +18,18 @@ navbar_title: Contato
       <h2 id="email">E-mail</h2>
       <p>Para conversar sobre pesquisa, estudos, o Projeto Axioma ou outras oportunidades:</p>
       <ul>
-        <li><a href="mailto:theoveigada@gmail.com">theoveigada@gmail.com</a></li>
-        <li><a href="mailto:al.theo.ambrosio@impatech.edu.br">al.theo.ambrosio@impatech.edu.br</a> <span class="text-muted">(acadêmico)</span></li>
+        <li><a href="mailto:{{ site.data.profile.email }}">{{ site.data.profile.email }}</a></li>
+        <li><a href="mailto:{{ site.data.profile.academic_email }}">{{ site.data.profile.academic_email }}</a> <span class="text-muted">(acadêmico)</span></li>
       </ul>
     </section>
     <section aria-labelledby="perfis">
       <h2 id="perfis">Perfis</h2>
       <ul>
-        <li><a href="https://www.linkedin.com/in/theo-veiga-drumond-ambr%C3%B3sio-127449365/" rel="noopener noreferrer">LinkedIn ↗</a></li>
-        <li><a href="https://github.com/TheoAmbrosio" rel="noopener noreferrer">GitHub ↗</a></li>
-        <li><a href="https://www.instagram.com/theo.dru/" rel="noopener noreferrer">Instagram ↗</a></li>
+        <li><a href="{{ site.data.profile.linkedin_url }}" rel="noopener noreferrer">LinkedIn ↗</a></li>
+        <li><a href="https://github.com/{{ site.data.profile.github }}" rel="noopener noreferrer">GitHub ↗</a></li>
+        <li><a href="https://www.instagram.com/{{ site.data.profile.instagram }}/" rel="noopener noreferrer">Instagram ↗</a></li>
       </ul>
     </section>
   </div>
+  <p class="contact-cv"><a href="{{ site.data.profile.cv_url | relative_url }}">Ver currículo <span aria-hidden="true">→</span></a></p>
 </article>

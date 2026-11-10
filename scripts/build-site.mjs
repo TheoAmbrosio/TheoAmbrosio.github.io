@@ -14,9 +14,11 @@ const data = {
   profile: await readYaml("_data/profile.yml"),
   navigation: await readYaml("_data/navigation.yml"),
   display: await readYaml("_data/display.yml"),
+  projects: await readYaml("_data/projects.yml"),
+  news: await readYaml("_data/news.yml"),
 };
 const engine = new Liquid();
-engine.registerFilter("relative_url", (value) => (config.baseurl || "") + value);
+engine.registerFilter("relative_url", (value) => /^https?:\/\//.test(value) ? value : (config.baseurl || "") + value);
 let layout = await read("_layouts/default.html");
 layout = layout
   .replace(/{%\s*include navbar\.html\s*%}/g, await read("_includes/navbar.html"))
@@ -25,7 +27,7 @@ await rm(dist, { recursive: true, force: true });
 await mkdir(dist, { recursive: true });
 await cp(path.join(root, "assets"), path.join(dist, "assets"), { recursive: true });
 await cp(path.join(root, "axioma"), path.join(dist, "axioma"), { recursive: true });
-for (const filename of ["index.html", "formacao.html", "axioma.html", "contato.html", "404.html"]) {
+for (const filename of ["index.html", "formacao.html", "projetos.html", "pactua.html", "axioma.html", "curriculo.html", "contato.html", "404.html"]) {
   const source = await read(filename);
   const match = source.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n/);
   if (!match) throw new Error("Front matter ausente em " + filename);
