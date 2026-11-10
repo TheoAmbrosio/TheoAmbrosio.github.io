@@ -1,0 +1,52 @@
+---
+layout: default
+title: Projetos
+navbar_title: Projetos
+url: /projetos.html
+description: "Projetos de Theo Ambrósio em ciência de dados, aprendizado de máquina e aplicações de IA."
+---
+
+<article class="interior-page projects-page">
+  <header>
+    <p class="eyebrow">Projetos</p>
+    <h1>Problemas, métodos e resultados</h1>
+    <p>Reúno aqui trabalhos que posso descrever com materiais consultáveis. Em cada caso, separo o que foi desenvolvido dos resultados observados e das limitações da avaliação.</p>
+  </header>
+
+  <section class="project-feature" aria-labelledby="pactua">
+    <p class="project-kind">Hackathon VX · 7–8 nov 2026</p>
+    <h2 id="pactua">Pactua</h2>
+    <p>Em uma equipe de cinco pessoas, desenvolvemos uma proposta para negociação de dívidas em escala no desafio D03, da Ondaluz Telecom. A Pactua combina um agente conversacional com um motor de propostas em código. A equipe conquistou o terceiro lugar geral entre 13 equipes selecionadas.</p>
+    <p class="project-note">Os resultados quantitativos divulgados para o projeto vêm de conversas simuladas; não representam recuperação financeira real.</p>
+    <figure class="project-visual">
+      <a href="{{ '/assets/images/pactua-simulacao.png' | relative_url }}" aria-label="Abrir em tamanho original o slide de resultados simulados da Pactua"><img src="{{ '/assets/images/pactua-simulacao.png' | relative_url }}" alt="Slide da Pactua: em 80 conversas pareadas com 40 clientes simulados, valor simulado a recuperar de 1,54 vez o da régua atual, zero violações de política e custo de IA de R$ 0,89 por conversa." width="2160" height="2700" loading="lazy" decoding="async"></a>
+      <figcaption>Comparação em laboratório com clientes simulados. Abra a imagem para ler em tamanho original.</figcaption>
+    </figure>
+    <a href="{{ '/pactua.html' | relative_url }}">Ver problema, arquitetura e avaliação <span aria-hidden="true">→</span></a>
+  </section>
+
+  <section class="project-feature" aria-labelledby="axioma">
+    <p class="project-kind">Extensão universitária · IMPA Tech</p>
+    <h2 id="axioma">Projeto Axioma</h2>
+    <p>O Axioma oferece aulas gratuitas de matemática avançada a estudantes da educação básica. Sou fundador e coordenador geral: organizo equipes, aulas e materiais e ensino probabilidade. Em outubro de 2026, a equipe coordenada tinha cerca de 20 pessoas, e as atividades do período reuniam cerca de 30 participantes.</p>
+    <a href="{{ '/axioma.html' | relative_url }}">Ver atividades e materiais <span aria-hidden="true">→</span></a>
+  </section>
+
+  <section class="project-feature" aria-labelledby="gatos-cachorros">
+    <p class="project-kind">Estudo preparatório · classificação de imagens</p>
+    <h2 id="gatos-cachorros">Gatos e cachorros</h2>
+    <p>Este estudo de classificação de gatos e cachorros é minha introdução ao processamento de imagens para a etapa de imagens médicas do PICME, prevista para começar entre dezembro de 2026 e janeiro de 2027. Desenvolvi um modelo baseado em ResNet-34 pré-treinada e documentei preparação dos dados, ampliações, treinamento, código e resultados de validação.</p>
+    <p>A melhor acurácia registrada para o modelo principal foi 98,32% na validação. Para uma avaliação posterior, meus colegas e eu montamos um conjunto de 78 fotos de gatos e cachorros da comunidade do IMPA Tech. O modelo acertou 66 delas (84,62%), como documentamos em um pôster em inglês de minha coautoria com Mateus Bandeira. O conjunto externo é pequeno; os resultados de validação dos participantes não são diretamente comparáveis porque usaram divisões e protocolos diferentes.</p>
+    <div class="project-links">
+      <a href="{{ '/assets/docs/cats-vs-dogs-ii-poster-en.pdf' | relative_url }}">Ler o pôster em inglês (PDF) <span aria-hidden="true">↗</span></a>
+      <a href="https://github.com/TheoAmbrosio/picme-processamento-de-imagens/tree/main/Cats%20and%20Dogs%20I%20e%20II/modelo%20principal" rel="noopener noreferrer">Modelo, método e resultados no GitHub <span aria-hidden="true">↗</span></a>
+      <a href="https://github.com/TheoAmbrosio/picme-processamento-de-imagens" rel="noopener noreferrer">Repositório do PICME <span aria-hidden="true">↗</span></a>
+    </div>
+  </section>
+
+  <section class="project-feature" aria-labelledby="em-andamento">
+    <p class="project-kind">Em início</p>
+    <h2 id="em-andamento">Trabalho com dados de uma empresa familiar</h2>
+    <p>Comecei a trabalhar com meus irmãos para organizar os processos da microempresa do nosso pai. Hoje a agenda dele está cheia; queremos usar dados e automações com IA para reduzir tarefas operacionais e liberar tempo de atendimento. Com mais capacidade, poderemos buscar novos clientes e aumentar o faturamento. Estamos definindo o problema e os métodos; os dados da empresa são privados.</p>
+  </section>
+</article>

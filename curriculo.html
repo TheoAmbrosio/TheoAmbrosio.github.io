@@ -1,0 +1,65 @@
+---
+layout: default
+title: Currículo
+url: /curriculo.html
+description: "Currículo público de Theo Veiga Drumond Ambrósio: formação, projetos acadêmicos e experiência em ciência de dados."
+---
+
+<article class="interior-page cv-page">
+  <header>
+    <p class="eyebrow">Currículo · atualizado em 10 de novembro de 2026</p>
+    <h1>Theo Veiga Drumond Ambrósio</h1>
+    <p>Graduando do IMPA Tech com ênfase em Ciência de Dados. Interesso-me especialmente por probabilidade, estatística e aprendizado de máquina. Gosto de liderar iniciativas e construir soluções em equipe.</p>
+    <div class="cv-contact">
+      <a href="mailto:{{ site.data.profile.email }}">{{ site.data.profile.email }}</a>
+      <a href="https://github.com/{{ site.data.profile.github }}">github.com/{{ site.data.profile.github }}</a>
+      <a href="{{ site.data.profile.linkedin_url }}">LinkedIn</a>
+    </div>
+  </header>
+
+  <section aria-labelledby="cv-formacao">
+    <h2 id="cv-formacao">Formação</h2>
+    <p><strong>Bacharelado em Matemática da Tecnologia e Inovação</strong> · IMPA Tech, Rio de Janeiro · 2025–presente. Ênfase em Ciência de Dados; conclusão prevista para março de 2029. Coeficiente de rendimento 9,1/10 (boletim de outubro de 2026). Eletiva em Teoria da Informação no IMPA, conceito A+.</p>
+  </section>
+
+  <section aria-labelledby="cv-projetos">
+    <h2 id="cv-projetos">Projetos e experiência aplicada</h2>
+    <div class="cv-entry">
+      <h3><a href="{{ '/pactua.html' | relative_url }}">Pactua · Hackathon VX · novembro de 2026</a></h3>
+      <p>Terceiro lugar geral entre 13 equipes selecionadas, em uma equipe de cinco pessoas. Fui responsável pelo modelo bayesiano de aceite e pagamento em JAX/NumPyro (SMC/HMC), pela segmentação da carteira com K-Means e pela cadeia de dados e arenas de simulação. Criei sete personas com LLMs locais para testes de robustez e coordenei agentes de IA em tarefas de treinamento e avaliação na minha máquina e na AWS. Os resultados divulgados são de simulações.</p>
+    </div>
+    <div class="cv-entry">
+      <h3><a href="{{ '/projetos.html#gatos-cachorros' | relative_url }}">Classificação de gatos e cachorros · PICME</a></h3>
+      <p>Desenvolvi em PyTorch um classificador baseado em ResNet-34, com transferência de aprendizado e ampliação de dados, como introdução ao processamento de imagens médicas. A melhor acurácia foi 98,32% na validação interna com 5.000 imagens; em outro conjunto, de 78 fotos de pets da comunidade do IMPA Tech montado com colegas, o modelo acertou 66. Documentei métodos e resultados em um <a href="{{ '/assets/docs/cats-vs-dogs-ii-poster-en.pdf' | relative_url }}">pôster em inglês</a> com Mateus Bandeira.</p>
+    </div>
+    <div class="cv-entry">
+      <h3>Organização de processos em microempresa familiar · em início</h3>
+      <p>Trabalho com meus irmãos para organizar processos e estudar automações com IA que possam liberar tempo de atendimento na empresa do nosso pai. O escopo técnico está em definição; os dados são privados.</p>
+    </div>
+  </section>
+
+  <section aria-labelledby="cv-atividades">
+    <h2 id="cv-atividades">Pesquisa, extensão e comunidade</h2>
+    <div class="cv-entry">
+      <h3>PICME · bolsista</h3>
+      <p>Em 2026, estudo processamento de imagens com orientação de Lucas Nissenbaum, preparando uma etapa de imagens médicas prevista para começar entre dezembro de 2026 e janeiro de 2027 em colaboração com o Instituto IDOR. Em ciclos anteriores, estudei amostragem aplicada com Maurício França (IBGE), algoritmos de geometria computacional com Emilio Brasil e probabilidade em dimensão alta com Roberto Imbuzeiro. Esses estudos fortaleceram meu rigor matemático, pensamento lógico e interesse por probabilidade.</p>
+    </div>
+    <div class="cv-entry">
+      <h3><a href="{{ '/axioma.html' | relative_url }}">Projeto Axioma · fundador e coordenador geral</a></h3>
+      <p>Projeto de extensão do IMPA Tech iniciado em outubro de 2025, com aulas gratuitas de matemática avançada para estudantes da educação básica. Organizo equipes, aulas e materiais e ensino probabilidade. Em outubro de 2026, coordenava cerca de 20 pessoas; as atividades do período reuniam cerca de 30 participantes.</p>
+    </div>
+    <div class="cv-entry">
+      <h3>Liga IMPACT · membro</h3>
+      <p>Participo da liga que aproxima estudantes com conhecimento técnico e pessoas do ecossistema de inovação. A <a href="https://www.linkedin.com/feed/update/urn:li:activity:7525354979415744512/" rel="noopener noreferrer">publicação da liga sobre o Hackathon VX</a> registra a conquista da equipe.</p>
+    </div>
+  </section>
+
+  <section aria-labelledby="cv-ferramentas">
+    <h2 id="cv-ferramentas">Ferramentas e idiomas</h2>
+    <p>Python, PyTorch, NumPy, pandas, JAX, NumPyro, Jupyter Notebook e AWS em projetos acadêmicos. SQL em nível iniciante. Português nativo e inglês C1 (Duolingo English Test). Kumon concluído.</p>
+  </section>
+  <section aria-labelledby="cv-escolar">
+    <h2 id="cv-escolar">Histórico escolar</h2>
+    <p>Bolsa parcial no Centro Educacional Charles Darwin, em Vila Velha–ES, do 8º ano ao fim do ensino médio. PIC da OBMEP em 2023 como convidado e em 2024 como medalhista. Acertei 45/45 questões de Matemática no Enem 2024. Bronze na OBMEP em 2023 e 2024; bronze no Canguru em 2022, ouro em 2023 e prata em 2024; premiações na OBI, OBR e OBA. Primeiro lugar na minha categoria da competição interna de matemática do Darwin em 2023 e 2024.</p>
+  </section>
+</article>

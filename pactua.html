@@ -1,0 +1,93 @@
+---
+layout: default
+title: Pactua · Hackathon VX
+navbar_title: Projetos
+url: /pactua.html
+description: "Pactua: solução de negociação de dívidas desenvolvida no Hackathon VX, com arquitetura, avaliação simulada e limitações."
+---
+
+<article class="interior-page project-detail">
+  <header>
+    <p class="eyebrow">Projeto · Hackathon VX</p>
+    <h1>Pactua</h1>
+    <p>Uma proposta de negociação de dívidas em escala que procura compreender a situação financeira do cliente antes de oferecer um acordo.</p>
+    <div class="project-meta" aria-label="Resumo do projeto">
+      <span>7 e 8 de novembro de 2026</span>
+      <span>3º lugar geral entre 13 equipes selecionadas</span>
+      <span>Equipe de cinco pessoas</span>
+    </div>
+  </header>
+
+  <section aria-labelledby="video-pactua">
+    <h2 id="video-pactua">Pactua em um minuto</h2>
+    <video class="project-video" controls playsinline preload="metadata" aria-label="Vídeo de apresentação da Pactua">
+      <source src="{{ '/assets/videos/pactua-1min.mp4' | relative_url }}" type="video/mp4">
+      Seu navegador não suporta este vídeo. <a href="{{ '/assets/videos/pactua-1min.mp4' | relative_url }}">Abrir vídeo em MP4</a>.
+    </video>
+  </section>
+
+  <section aria-labelledby="problema">
+    <h2 id="problema">Problema</h2>
+    <p>O desafio D03 do Hackathon VX, da Visagio X / Made in Rio, tratou de negociação de dívidas em escala para a Ondaluz Telecom. Uma proposta precisa considerar a capacidade de pagamento do cliente e respeitar as regras de negociação.</p>
+  </section>
+
+  <section aria-labelledby="solucao">
+    <h2 id="solucao">Solução</h2>
+    <p>A Pactua conversa com o cliente para compreender sua situação financeira e então apresenta uma proposta compatível com as regras do credor. A agente conversacional Clara usa um LLM no Amazon Bedrock; o LLM não determina livremente os valores do acordo.</p>
+  </section>
+
+  <section aria-labelledby="arquitetura">
+    <h2 id="arquitetura">Arquitetura resumida</h2>
+    <ol class="architecture-list">
+      <li>Clara conduz a conversa e reúne as informações necessárias.</li>
+      <li>Um modelo bayesiano estima as chances de aceite e pagamento de cada proposta. Entre as opções admitidas pela política do credor, um motor em código seleciona a de maior valor esperado.</li>
+      <li>Uma integração por API calcula e registra o acordo.</li>
+      <li>Mensagens passam por uma auditoria com dez regras antes do envio.</li>
+      <li>Um laboratório com clientes simulados permite avaliar a solução. A infraestrutura usa AWS.</li>
+    </ol>
+  </section>
+
+  <section aria-labelledby="avaliacao">
+    <h2 id="avaliacao">Avaliação e limites</h2>
+    <p>Em um experimento reportado com 900 conversas simuladas, a equipe comparou a régua atual com a Pactua:</p>
+    <div class="table-scroll">
+      <table class="results-table">
+        <caption>Resultados reportados em simulação de 900 conversas</caption>
+        <thead><tr><th scope="col">Métrica</th><th scope="col">Régua atual</th><th scope="col">Pactua</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Taxa de acordos</th><td>25,9%</td><td>35,7%</td></tr>
+          <tr><th scope="row">Recuperação esperada</th><td>3,1%</td><td>10,0%</td></tr>
+          <tr><th scope="row">Violações da política</th><td>47</td><td>0</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Esses resultados descrevem uma simulação. Eles não medem recuperação financeira real, nem demonstram implantação em produção. A generalização para clientes reais depende de avaliação adicional.</p>
+    <p>Em testes reportados com mais de 317 mil ofertas, nenhuma violação da política do credor foi observada. Esse resultado também se refere a testes, não a acordos reais.</p>
+    <p>Um material de apresentação do projeto resume outra comparação: os mesmos 40 clientes simulados negociaram com a régua atual e com a Pactua, em 80 conversas pareadas. Nesse recorte, o valor simulado a recuperar, após taxas, foi 1,54 vez o da régua atual; houve zero violações de política com a Pactua e cinco com a régua atual. O custo de IA informado foi R$ 0,89 por conversa, medido na AWS. O material ressalta que a recuperação efetiva só poderá ser medida em um piloto.</p>
+  </section>
+
+  <section aria-labelledby="equipe">
+    <h2 id="equipe">Equipe e minha participação</h2>
+    <p>O projeto foi desenvolvido por cinco integrantes:</p>
+    <ul class="team-links">
+      <li><a href="https://www.linkedin.com/in/evandroichirofsk/" rel="noopener noreferrer">Evandro Ichiro Fuse Sakai</a></li>
+      <li><a href="{{ site.data.profile.linkedin_url }}" rel="noopener noreferrer">Theo Veiga Drumond Ambrósio</a></li>
+      <li><a href="https://www.linkedin.com/in/pedroloschigiov/" rel="noopener noreferrer">Pedro Loschi Giovannini</a></li>
+      <li><a href="https://www.linkedin.com/in/carlos-eduardo-rocha-de-paula-a91b26355/" rel="noopener noreferrer">Carlos Eduardo Rocha de Paula</a></li>
+      <li><a href="https://www.linkedin.com/in/samuel-silveira/" rel="noopener noreferrer">Samuel Silveira</a></li>
+    </ul>
+    <p>Fui responsável pelo modelo estatístico da Pactua. Desenvolvi um modelo bayesiano com JAX e NumPyro, usando SMC e HMC para estimar as probabilidades de aceite e pagamento; essas estimativas orientam a escolha da proposta de maior valor esperado dentro da política do credor. Também segmentei a carteira em perfis com K-Means e construí a cadeia de dados e os ambientes de simulação usados na avaliação.</p>
+    <p>Criei um gerador de clientes simulados com LLMs locais, com sete personas, incluindo uma adversarial, para testar a robustez da assistente. Coordenei agentes de IA em execução autônoma, localmente e na AWS, em tarefas de treinamento e avaliação ao longo da noite do hackathon. Os demais componentes foram trabalho da equipe.</p>
+  </section>
+
+  <section aria-labelledby="materiais">
+    <h2 id="materiais">Materiais</h2>
+    <p>O código e a demonstração ainda não estão disponíveis publicamente.</p>
+    <div class="project-links">
+      <a href="https://www.linkedin.com/feed/update/urn:li:activity:7525354979415744512/" rel="noopener noreferrer">Publicação da Liga IMPACT sobre a equipe <span aria-hidden="true">↗</span></a>
+      <a href="https://www.linkedin.com/company/liga-impact/" rel="noopener noreferrer">Página da Liga IMPACT <span aria-hidden="true">↗</span></a>
+      <a href="{{ '/assets/images/pactua-simulacao.png' | relative_url }}">Slide com resultados da simulação (PNG) <span aria-hidden="true">↗</span></a>
+    </div>
+    <a href="{{ '/projetos.html' | relative_url }}">Voltar aos projetos <span aria-hidden="true">←</span></a>
+  </section>
+</article>

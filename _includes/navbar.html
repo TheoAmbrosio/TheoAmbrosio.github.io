@@ -4,7 +4,20 @@
     <nav aria-label="Navegação principal">
       <ul class="site-nav">
         {% for item in site.data.navigation.pages %}
+        {% if item.name == 'Projetos' %}
+        <li class="nav-dropdown">
+          <details>
+            <summary{% if page.navbar_title == 'Projetos' or page.navbar_title == 'Axioma' %} class="is-current"{% endif %}>Projetos</summary>
+            <ul class="nav-submenu">
+              <li><a href="{{ '/projetos.html' | relative_url }}"{% if page.url == '/projetos.html' %} aria-current="page"{% endif %}>Todos os projetos</a></li>
+              <li><a href="{{ '/pactua.html' | relative_url }}"{% if page.url == '/pactua.html' %} aria-current="page"{% endif %}>Pactua</a></li>
+              <li><a href="{{ '/axioma.html' | relative_url }}"{% if page.url == '/axioma.html' %} aria-current="page"{% endif %}>Axioma</a></li>
+            </ul>
+          </details>
+        </li>
+        {% else %}
         <li><a href="{{ item.url | relative_url }}"{% if item.name == page.navbar_title %} aria-current="page"{% endif %}>{{ item.name }}</a></li>
+        {% endif %}
         {% endfor %}
       </ul>
     </nav>
