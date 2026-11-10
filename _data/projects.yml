@@ -1,10 +1,10 @@
 - name: Pactua
   kind: Hackathon VX · 2026
-  summary: Agente de negociação de dívidas que combina conversa com LLM e seleção determinística de propostas. A equipe ficou em terceiro lugar geral.
+  summary: Desenvolvi o modelo bayesiano que estima aceite e pagamento das propostas; nossa equipe conquistou o 3º lugar geral no Hackathon VX.
   url: /pactua.html
   action: Conhecer a Pactua
 - name: Projeto Axioma
   kind: Extensão universitária · IMPA Tech
-  summary: Coordeno equipes, aulas e materiais para aproximar estudantes da educação básica de matemática além do currículo escolar. Também ensino probabilidade.
+  summary: Fundei e coordeno a iniciativa, organizo aulas e materiais e ensino probabilidade. Em outubro de 2026, a equipe tinha cerca de 20 pessoas.
   url: /axioma.html
   action: Conhecer o Axioma
