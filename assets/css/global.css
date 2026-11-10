@@ -245,16 +245,12 @@ a:focus-visible, button:focus-visible {
 .project-feature > a:hover, .project-links a:hover { text-decoration: underline; }
 .project-note { padding-left: 1rem; border-left: 3px solid var(--warm); color: var(--muted); }
 .project-links { display: flex; flex-wrap: wrap; gap: .6rem 1.5rem; margin: 1rem 0; }
-.project-visual { max-width: 430px; margin: 1.5rem 0; }
 .project-video-player { max-width: 480px; }
 .project-video { display: block; width: auto; height: auto; max-width: 100%; max-height: 360px; margin: 0 auto; background: #152327; }
 .project-video:fullscreen { width: 100%; height: 100%; max-width: none; max-height: none; object-fit: contain; }
 .video-fullscreen { margin-top: .75rem; padding: .45rem .9rem; border: 1px solid var(--accent); border-radius: 3px; background: var(--surface); color: var(--accent); font: inherit; cursor: pointer; }
 .video-fullscreen:hover { background: var(--accent); color: white; }
 .video-feedback { margin: .5rem 0 0; color: var(--muted); font-size: .85rem; }
-.project-visual a, .project-visual img { display: block; }
-.project-visual img { width: 100%; height: auto; border: 1px solid var(--line); }
-.project-visual figcaption { margin-top: .5rem; color: var(--muted); font-size: .84rem; }
 .project-detail > section { padding: 2rem 0; border-top: 1px solid var(--line); }
 .team-links { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .3rem 1rem; padding-left: 1.3rem; }
 .project-meta { display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; color: var(--muted); font-size: .88rem; }

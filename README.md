@@ -18,7 +18,7 @@ Os arquivos-fonte Delta e as referências dos materiais permanecem no Axioma. Ao
 
 O repositório geral `Projeto-Axioma/aulas` é privado em novembro de 2026, então o site não oferece um link público para ele. O trabalho com dados da empresa familiar também usa dados privados e não é publicado. O pôster em inglês do estudo de classificação está em `assets/docs/cats-vs-dogs-ii-poster-en.pdf`.
 
-O currículo público está apenas em `curriculo.html`. O PDF privado da Gupy foi usado como referência de fatos profissionais; dados pessoais que não são necessários ao site não foram copiados. A imagem da simulação da Pactua está em `assets/images/pactua-simulacao.png`.
+O currículo público está apenas em `curriculo.html`. O PDF privado da Gupy foi usado como referência de fatos profissionais; dados pessoais que não são necessários ao site não foram copiados. O vídeo da Pactua está em `assets/videos/pactua-1min.mp4`.
 
 ## Prévia local
 
