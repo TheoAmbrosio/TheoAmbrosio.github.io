@@ -118,8 +118,7 @@ a:focus-visible, button:focus-visible {
   box-shadow: 0 12px 24px rgba(33, 52, 58, .1);
   list-style: none;
 }
-.nav-dropdown details[open] .nav-submenu, .nav-dropdown:focus-within .nav-submenu { display: block; }
-@media (hover: hover) and (min-width: 768px) { .nav-dropdown:hover .nav-submenu { display: block; } }
+.nav-dropdown details[open] .nav-submenu { display: block; }
 .nav-submenu a { display: block; white-space: nowrap; }
 .site-nav a:hover, .site-nav a[aria-current="page"] {
   border-color: var(--accent);

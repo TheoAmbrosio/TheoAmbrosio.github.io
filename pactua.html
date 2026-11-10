@@ -52,9 +52,9 @@ description: "Pactua: solução de negociação de dívidas desenvolvida no Hack
   <section aria-labelledby="avaliacao">
     <h2 id="avaliacao">Avaliação e limites</h2>
     <p>Em um experimento reportado com 900 conversas simuladas, a equipe comparou a régua atual com a Pactua:</p>
-    <div class="table-scroll">
+    <div class="table-scroll" role="region" aria-labelledby="resultados-simulados" tabindex="0">
       <table class="results-table">
-        <caption>Resultados reportados em simulação de 900 conversas</caption>
+        <caption id="resultados-simulados">Resultados reportados em simulação de 900 conversas</caption>
         <thead><tr><th scope="col">Métrica</th><th scope="col">Régua atual</th><th scope="col">Pactua</th></tr></thead>
         <tbody>
           <tr><th scope="row">Taxa de acordos</th><td>25,9%</td><td>35,7%</td></tr>
@@ -63,8 +63,8 @@ description: "Pactua: solução de negociação de dívidas desenvolvida no Hack
         </tbody>
       </table>
     </div>
-    <p>Esses resultados descrevem uma simulação. Eles não medem recuperação financeira real, nem demonstram implantação em produção. A generalização para clientes reais depende de avaliação adicional.</p>
-    <p>Em testes reportados com mais de 317 mil ofertas, nenhuma violação da política do credor foi observada. Esse resultado também se refere a testes, não a acordos reais.</p>
+    <p>Os resultados são de simulação. A recuperação financeira e o desempenho com clientes reais ainda precisam ser avaliados em um piloto.</p>
+    <p>Em outra bateria de testes, com mais de 317 mil ofertas, não observamos violações da política do credor.</p>
     <p>Um material de apresentação do projeto resume outra comparação: os mesmos 40 clientes simulados negociaram com a régua atual e com a Pactua, em 80 conversas pareadas. Nesse recorte, o valor simulado a recuperar, após taxas, foi 1,54 vez o da régua atual; houve zero violações de política com a Pactua e cinco com a régua atual. O custo de IA informado foi R$ 0,89 por conversa, medido na AWS. O material ressalta que a recuperação efetiva só poderá ser medida em um piloto.</p>
   </section>
 
@@ -84,7 +84,7 @@ description: "Pactua: solução de negociação de dívidas desenvolvida no Hack
 
   <section aria-labelledby="materiais">
     <h2 id="materiais">Materiais</h2>
-    <p>O código e a demonstração ainda não estão disponíveis publicamente.</p>
+    <p>O vídeo acima apresenta a proposta. O código ainda não está disponível publicamente.</p>
     <div class="project-links">
       <a href="https://www.linkedin.com/feed/update/urn:li:activity:7525354979415744512/" rel="noopener noreferrer">Publicação da Liga IMPACT sobre a equipe <span aria-hidden="true">↗</span></a>
       <a href="https://www.linkedin.com/company/liga-impact/" rel="noopener noreferrer">Página da Liga IMPACT <span aria-hidden="true">↗</span></a>
