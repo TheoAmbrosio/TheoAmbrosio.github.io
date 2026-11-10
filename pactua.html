@@ -25,24 +25,7 @@ description: "Pactua: solução de negociação de dívidas desenvolvida no Hack
       <source src="{{ '/assets/videos/pactua-1min.mp4' | relative_url }}" type="video/mp4">
       Seu navegador não suporta este vídeo. <a href="{{ '/assets/videos/pactua-1min.mp4' | relative_url }}">Abrir vídeo em MP4</a>.
     </video>
-    <button class="video-fullscreen" type="button" aria-controls="pactua-video">Tela cheia</button>
-    <p class="video-feedback" role="status"></p>
     </div>
-    <script>
-      document.querySelector('.video-fullscreen').addEventListener('click', async () => {
-        const video = document.getElementById('pactua-video');
-        const feedback = document.querySelector('.video-feedback');
-        feedback.textContent = '';
-        try {
-          if (video.requestFullscreen) await video.requestFullscreen();
-          else if (video.webkitEnterFullscreen) video.webkitEnterFullscreen();
-          else if (video.webkitRequestFullscreen) video.webkitRequestFullscreen();
-          else window.open(video.currentSrc || video.querySelector('source').src, '_blank', 'noopener');
-        } catch {
-          feedback.textContent = 'Use o controle de tela cheia do próprio vídeo.';
-        }
-      });
-    </script>
   </section>
 
   <section aria-labelledby="problema">

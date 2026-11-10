@@ -1,0 +1,35 @@
+{
+  "colors": {
+    "background": "#f8f9fb",
+    "surface": "#ffffff",
+    "text": "#1d2836",
+    "muted": "#536170",
+    "border": "#d9dfe6",
+    "accent": "#264b78",
+    "accentHover": "#183454",
+    "focus": "#92552f"
+  },
+  "fonts": {
+    "display": "Libre Baskerville",
+    "interface": "DM Sans",
+    "metadata": "ui-monospace"
+  },
+  "spacing": [
+    4,
+    8,
+    12,
+    16,
+    24,
+    32,
+    48,
+    64
+  ],
+  "layout": {
+    "maxWidth": 1120,
+    "sidebar": 220,
+    "gap": 48,
+    "mobileBreakpoint": 768,
+    "videoWidth": 420,
+    "videoHeight": 236.25
+  }
+}
