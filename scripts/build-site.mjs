@@ -27,6 +27,7 @@ await rm(dist, { recursive: true, force: true });
 await mkdir(dist, { recursive: true });
 await cp(path.join(root, "assets"), path.join(dist, "assets"), { recursive: true });
 await cp(path.join(root, "axioma"), path.join(dist, "axioma"), { recursive: true });
+await cp(path.join(root, "case-dados.html"), path.join(dist, "case-dados.html"));
 for (const filename of ["index.html", "formacao.html", "projetos.html", "pactua.html", "axioma.html", "curriculo.html", "contato.html", "404.html"]) {
   const source = await read(filename);
   const match = source.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n/);
